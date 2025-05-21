@@ -1,103 +1,15 @@
 import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 ">
+      <Image src="/Frame12.png" width={500} height={500} alt="sumatera"></Image>
+      {/* <svg width="1080" height="1080" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_66_13)">
+          <path d="M1 162L5 166.5L7 171.5L9 175L12 177.5H16.5L19 181L20 186.5L22 192L28 200.5L30.5 203.5L34.5 206H39.5L41.5 208H46L48.5 211L50.5 214.5L51.5 219.5V223.5H53.5V252.5L58 258L60 260V262.5L62.5 265H68L72.5 262.5H75.5L78.7726 265L84 266.5L87.5 268L94.5 272H96L97 266.5L98 261.5L94.5 254.5L92.5 251.5L91 247.5L89 244V234.5V230.5L91 229.5L89 226V218L85 215L82.5 212L79 210L76 206V195L79 190.5L77.5 187L76 181.5L72.5 179.5L70.5 177L75 175L79 174.5H81L83.5 171L81 167L78 166L77 164.5L76 161.5L75 158L74 153.5L71 150.5L70 149.5L69 146L68 143.5L65 139V134.5L69 130L71.5 127L74 124.5L72.5 119.5L76.5 117L82.5 113L84 107.5L85 103L86 96.5L87 92L87.5 90V86.5H93L96 83.5H106V76L104 72.5L99 69.5L94.5 66H91.5L88.5 65H81L79 61.5L81 58.5V55L79 52L78 48L77.5 44L75 38L74 35.5L69.5 32L64.5 28L60 24L55 19.5L52 17L49 12L46 10L44 7.5L41 3L40 1H35.5L26.5 4.5L22 6.5L18 8.5L13 9.5H6.5L3.5 3.5H1V13V162Z" fill="#D9D9D9" stroke="black"/>
+          <path d="M20.5 280.5L22.5 281L23 277.5L22.5 276L20.5 274L18.5 271L17 269.5H15L14 272.5L15.5 274.5L17 277L20.5 280.5Z" fill="#D9D9D9" stroke="black"/>
+          <path d="M2.5 284H5L5.5 282L4 280.5L1.5 283L1 283.5L2.5 284Z" fill="#D9D9D9" stroke="black"/>
+        </g>
+      </svg> */}
     </div>
   );
 }

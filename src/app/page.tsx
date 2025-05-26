@@ -1,15 +1,16 @@
-import Image from "next/image";
+import Jawa from "@/components/jawa";
+import Papua from "@/components/papua";
+import Sulawesi from "@/components/Sulawesi";
+import Sumatra from "@/components/sumatra";
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 ">
-      <Image src="/Frame12.png" width={500} height={500} alt="sumatera"></Image>
-      {/* <svg width="1080" height="1080" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_66_13)">
-          <path d="M1 162L5 166.5L7 171.5L9 175L12 177.5H16.5L19 181L20 186.5L22 192L28 200.5L30.5 203.5L34.5 206H39.5L41.5 208H46L48.5 211L50.5 214.5L51.5 219.5V223.5H53.5V252.5L58 258L60 260V262.5L62.5 265H68L72.5 262.5H75.5L78.7726 265L84 266.5L87.5 268L94.5 272H96L97 266.5L98 261.5L94.5 254.5L92.5 251.5L91 247.5L89 244V234.5V230.5L91 229.5L89 226V218L85 215L82.5 212L79 210L76 206V195L79 190.5L77.5 187L76 181.5L72.5 179.5L70.5 177L75 175L79 174.5H81L83.5 171L81 167L78 166L77 164.5L76 161.5L75 158L74 153.5L71 150.5L70 149.5L69 146L68 143.5L65 139V134.5L69 130L71.5 127L74 124.5L72.5 119.5L76.5 117L82.5 113L84 107.5L85 103L86 96.5L87 92L87.5 90V86.5H93L96 83.5H106V76L104 72.5L99 69.5L94.5 66H91.5L88.5 65H81L79 61.5L81 58.5V55L79 52L78 48L77.5 44L75 38L74 35.5L69.5 32L64.5 28L60 24L55 19.5L52 17L49 12L46 10L44 7.5L41 3L40 1H35.5L26.5 4.5L22 6.5L18 8.5L13 9.5H6.5L3.5 3.5H1V13V162Z" fill="#D9D9D9" stroke="black"/>
-          <path d="M20.5 280.5L22.5 281L23 277.5L22.5 276L20.5 274L18.5 271L17 269.5H15L14 272.5L15.5 274.5L17 277L20.5 280.5Z" fill="#D9D9D9" stroke="black"/>
-          <path d="M2.5 284H5L5.5 282L4 280.5L1.5 283L1 283.5L2.5 284Z" fill="#D9D9D9" stroke="black"/>
-        </g>
-      </svg> */}
-    </div>
+    <main className="min-h-screen flex flex-col items-center justify-center">
+      <h1 className="text-3xl font-bold mb-4">Peta Interaktif Sulawesi</h1>
+      <Sulawesi />
+      <Jawa />
+      <Sumatra />
+      <Papua />
+    </main>
   );
 }

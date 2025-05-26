@@ -1,7 +1,7 @@
-import Jawa from "@/components/jawa";
-import Papua from "@/components/papua";
+import Jawa from "@/components/Jawa";
+import Papua from "@/components/Papua";
 import Sulawesi from "@/components/Sulawesi";
-import Sumatra from "@/components/sumatra";
+import Sumatra from "@/components/Sumatra";
 
 export default function Home() {
   return (

@@ -19,7 +19,8 @@ body {
 path{
   transition: all 0.3s;
 }
-path:hover{
+g:hover{
+  
   transform: translateX(10px) translateY(10px);
   transition: 0.3s ease-in-out;
   box-shadow: 10px 10px 0px 0px #000;
@@ -29,9 +30,8 @@ img{
 
   transition: 0.3s ease-in-out;
 }
-
-/* img:hover{
+img:hover{
   transform: translateX(10px) translateY(10px);
   box-shadow: 10px 10px 0px 0px #000;
   transition: 0.3s ease-in-out;
-} */
+}

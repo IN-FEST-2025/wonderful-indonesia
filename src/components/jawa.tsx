@@ -11,5 +11,7 @@ export default function Jawa() {
     "yogyakarta"
   ];
 
-  return SvgGenerator(provinces, "/maps/jawa.svg");
+  const map = "/maps/jawa.svg";
+
+  return SvgGenerator(provinces, map);
 }

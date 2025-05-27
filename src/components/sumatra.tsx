@@ -10,7 +10,10 @@ export default function Jawa() {
     "jambi",
     "aceh",
     "riau",
+    "bengkulu"
   ];
 
-  return SvgGenerator(provinces, "/maps/jawa.svg");
+  const map = "/maps/sumatra.svg";
+
+  return SvgGenerator(provinces, map);
 }

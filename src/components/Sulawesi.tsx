@@ -12,9 +12,11 @@ export default function Sulawesi() {
     "gorontalo",
   ];
 
+  const map = "/maps/sulawesi.svg";
+
   return (
 
-    SvgGenerator(provinces, "/maps/sulawesi.svg")
+    SvgGenerator(provinces, map)
 
   )
   

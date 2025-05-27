@@ -2,6 +2,7 @@ import Jawa from "@/components/Jawa";
 import Papua from "@/components/Papua";
 import Sulawesi from "@/components/Sulawesi";
 import Sumatra from "@/components/Sumatra";
+import Kalimantan from "@/components/Kalimantan";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Sulawesi />
       <Jawa />
       <Sumatra />
+      <Kalimantan/>
       <Papua />
     </main>
   );

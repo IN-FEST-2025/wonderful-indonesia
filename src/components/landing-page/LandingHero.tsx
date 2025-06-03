@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import MapPreview from './MapPreview';
 
 export default function LandingHero() {
   const router = useRouter();
@@ -15,8 +16,7 @@ export default function LandingHero() {
         <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
           <h1 className="text-4xl font-bold mb-4">Wonderful Indonesia</h1>
           <p className="text-gray-700 mb-8">
-            lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem 
-            ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit
+            Jelajahi keindahan Indonesia melalui peta interaktif kami. Temukan destinasi wisata menarik dan keajaiban budaya dari Sabang sampai Merauke.
           </p>
           <button 
             onClick={handleGetStarted}
@@ -27,9 +27,7 @@ export default function LandingHero() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">Peta Indonesia</h2>
-          <div className="w-full h-64 bg-white bg-opacity-50 rounded-lg flex items-center justify-center">
-            <p className="text-gray-700">Klik tombol GET STARTED untuk melihat peta interaktif</p>
-          </div>
+          <MapPreview />
         </div>
       </div>
     </div>

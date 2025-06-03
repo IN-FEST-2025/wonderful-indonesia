@@ -31,6 +31,24 @@ export default function Jawa() {
         onClick={() => handleMarkerClick("jakarta")}
       ></div>
 
+      <div
+        className="absolute w-4 h-4 bg-red-500 border-2 border-white rounded-full cursor-pointer"
+        style={{ top: "45%", left: "65%" }}
+        onClick={() => handleMarkerClick("surabaya")}
+      ></div>
+
+      <div
+        className="absolute w-4 h-4 bg-red-500 border-2 border-white rounded-full cursor-pointer"
+        style={{ top: "35%", left: "30%" }}
+        onClick={() => handleMarkerClick("bandung")}
+      ></div>
+
+      <div
+        className="absolute w-4 h-4 bg-red-500 border-2 border-white rounded-full cursor-pointer"
+        style={{ top: "30%", left: "20%" }}
+        onClick={() => handleMarkerClick("semarang")}
+      ></div>
+
       {/* Popup */}
       {popupImage && (
         <div

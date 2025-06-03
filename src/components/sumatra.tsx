@@ -1,7 +1,7 @@
 "use client";
 
 import SvgGenerator from "@/functions/SvgGenerator";
-export default function Jawa() {
+export default function Sumatra() {
   const provinces = [
     "s-sumatra",
     "u-sumatra",
@@ -13,7 +13,7 @@ export default function Jawa() {
     "bengkulu"
   ];
 
-  const map = "/maps/sumatra.svg";
+  const map = "/peta/sumatra.svg";
 
   return SvgGenerator(provinces, map);
 }

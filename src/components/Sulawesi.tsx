@@ -12,7 +12,7 @@ export default function Sulawesi() {
     "gorontalo",
   ];
 
-  const map = "/maps/sulawesi.svg";
+  const map = "/peta/sulawesi.svg";
 
   return (
 

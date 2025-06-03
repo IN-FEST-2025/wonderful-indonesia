@@ -12,7 +12,7 @@ export default function Kalimantan(){
         "k-timur",
     ]
 
-    const map = "/maps/kalimantan.svg";
+    const map = "/peta/kalimantan.svg";
 
     return (
 

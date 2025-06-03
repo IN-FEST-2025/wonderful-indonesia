@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <!-- Peta Indonesia Sederhana -->
+  <style>
+    .island {
+      fill: #e0e0e0;
+      stroke: #333;
+      stroke-width: 1;
+      transition: all 0.3s ease;
+    }
+    .island:hover {
+      fill: #f0f0f0;
+      transform: translate(2px, 2px);
+    }
+    .label {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      fill: #333;
+      text-anchor: middle;
+    }
+  </style>
+  
+  <!-- Sumatra -->
+  <path class="island" d="M100,150 L150,100 L180,150 L160,200 L120,220 L100,180 Z" />
+  <text class="label" x="140" y="160">Sumatra</text>
+  
+  <!-- Jawa -->
+  <path class="island" d="M200,250 L300,240 L320,260 L280,270 L200,260 Z" />
+  <text class="label" x="250" y="255">Jawa</text>
+  
+  <!-- Kalimantan -->
+  <path class="island" d="M250,150 L320,120 L350,150 L340,200 L280,220 L250,180 Z" />
+  <text class="label" x="300" y="170">Kalimantan</text>
+  
+  <!-- Sulawesi -->
+  <path class="island" d="M400,150 L420,120 L450,130 L460,160 L440,200 L410,190 L420,170 L400,180 Z" />
+  <text class="label" x="430" y="160">Sulawesi</text>
+  
+  <!-- Papua -->
+  <path class="island" d="M500,150 L600,130 L620,180 L580,200 L520,190 Z" />
+  <text class="label" x="560" y="170">Papua</text>
+  
+  <!-- Bali & Nusa Tenggara -->
+  <path class="island" d="M330,270 L350,265 L380,280 L360,290 L330,285 Z" />
+  <text class="label" x="355" y="280">Bali & NT</text>
+  
+  <!-- Maluku -->
+  <path class="island" d="M470,170 L490,160 L500,180 L480,190 Z" />
+  <text class="label" x="485" y="175">Maluku</text>
+</svg>

@@ -1,35 +1,12 @@
-'use client';
-
-import { useRouter } from 'next/navigation';
-import MapPreview from './MapPreview';
-
 export default function LandingHero() {
-  const router = useRouter();
-
-  const handleGetStarted = () => {
-    router.push('/'); // Navigasi ke halaman utama dengan peta interaktif
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-start">
-      <div className="w-full max-w-6xl p-8 bg-white bg-opacity-90 rounded-lg shadow-lg flex flex-col md:flex-row justify-between items-center">
-        <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
-          <h1 className="text-4xl font-bold mb-4">Wonderful Indonesia</h1>
-          <p className="text-gray-700 mb-8">
-            Jelajahi keindahan Indonesia melalui peta interaktif kami. Temukan destinasi wisata menarik dan keajaiban budaya dari Sabang sampai Merauke.
-          </p>
-          <button 
-            onClick={handleGetStarted}
-            className="bg-black text-white px-6 py-3 font-semibold hover:bg-gray-800 transition-colors"
-          >
-            GET STARTED
-          </button>
-        </div>
-        <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4">Peta Indonesia</h2>
-          <MapPreview />
-        </div>
+
+    <section className="hero-section bg-red-700 border border-gray-200 p-8 rounded-lg shadow-md my-8 mx-auto max-w-6xl">
+      <div className="title-container">
+        <h1 className="hero-title text-4xl md:text-5xl font-bold mb-4">Wonderful Indonesia</h1>
+        <p className="hero-subtitle max-w-2xl text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam impedit ullam optio odio vero tenetur? Vero, sed cupiditate labore eum aliquam fugit, sequi voluptatum dolores incidunt asperiores corporis neque placeat eaque qui maiores omnis nam! Quod quo nihil explicabo nobis accusantium corrupti autem exercitati</p>
       </div>
-    </div>
+    </section>
+
   );
 }
